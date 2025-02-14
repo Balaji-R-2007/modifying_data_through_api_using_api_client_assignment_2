@@ -1,0 +1,19 @@
+meta {
+  name: giving data
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3010/menu
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name":"box",
+    "description":"nice box",
+    "price":100
+  }
+}
